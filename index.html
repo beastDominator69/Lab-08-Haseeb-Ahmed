@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Recipe Management System</h1>
+
+        <form id="recipeForm">
+            <input type="text" id="title" placeholder="Recipe Title" required>
+            <textarea id="ingredients" placeholder="Ingredients" required></textarea>
+            <textarea id="instructions" placeholder="Instructions" required>
+
+</textarea>
+            <label>Upload Recipe Image</label>
+            <input type="file" id="image" accept="image/*">
+
+            <button type="submit" id="saveButton">Add Recipe</button>
+        </form>
+
+        <h2>My Recipes</h2>
+        <div id="recipeList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
